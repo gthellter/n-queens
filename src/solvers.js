@@ -17,7 +17,27 @@
 
 window.findNRooksSolution = function(n) {
   var solution = undefined; //fixme
-
+  /*
+  i - n size of board
+  o - array of arrays representing board
+  c - none
+  e - none
+  */
+ //need parameters in recursive function for: currentBoard, object of invalid columns
+  // --strategy--
+  //inside closure
+    //define solution as empty array
+  //if currentRow is undefined set to 0
+  // ***Base Case***
+  // if at n index of outer array && space available
+    //place rook on available space
+    //solution = arrayOfArrays
+    //return solution
+  // place rook on board in 0,0 position, 0,1 position etc (iteration)
+  //block out column by adding index to invalid columns object {1: false}
+  //***Recursive Case****
+  //recurse though board with next open row (currentRow++), but only columns acceptable
+  //
   console.log('Single solution for ' + n + ' rooks:', JSON.stringify(solution));
   return solution;
 };
