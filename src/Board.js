@@ -142,7 +142,7 @@
     hasMajorDiagonalConflictAt: function(majorDiagonalColumnIndexAtFirstRow) {
       var count = 0;
       var n = this.attributes.n;
-      for (let i = majorDiagonalColumnIndexAtFirstRow; i < n; i++) {
+      for (let i = -(this.attributes.n - 1); i < n; i++) {
         var indexItem;
         var columnIndex;
         if (i < 0) {
@@ -181,7 +181,7 @@
     hasMinorDiagonalConflictAt: function(minorDiagonalColumnIndexAtFirstRow) {
       var count = 0;
       var n = this.attributes.n;
-      for (let i = 0; i < minorDiagonalColumnIndexAtFirstRow; i++) {
+      for (let i = 0; i < 2*n - 1; i++) {
         var indexItem;
         var columnIndex;
         if (i >= n) {
